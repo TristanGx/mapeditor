@@ -8,11 +8,11 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "app/index.html"));
 });
 
-app.get("js/main.js", (req, res) => {
+app.get("/js/main.js", (req, res) => {
     res.sendFile(path.join(__dirname, "app/js/main.js"));
 })
 
-app.get("css/main.css", (req, res) => {
+app.get("/css/main.css", (req, res) => {
     res.sendFile(path.join(__dirname, "app/css/main.css"));
 })
 
