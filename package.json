@@ -1,0 +1,24 @@
+{
+  "name": "mapeditor",
+  "version": "1.0.0",
+  "description": "A map ediotr for my game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TristanGx/mapeditor.git"
+  },
+  "keywords": [
+    "map",
+    "editor",
+    "hunter"
+  ],
+  "author": "TristanGx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TristanGx/mapeditor/issues"
+  },
+  "homepage": "https://github.com/TristanGx/mapeditor#readme"
+}
