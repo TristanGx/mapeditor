@@ -2,8 +2,7 @@ h1 {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 90px;
-    padding-top: 26%;
+    font-size: 85px;
 }
 
 body {
@@ -12,4 +11,8 @@ body {
 
 div {
     text-align: center;
+}
+
+img {
+    width: 400px;
 }
