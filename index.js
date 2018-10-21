@@ -1,6 +1,6 @@
-import express from "express";
+const express = require("express");
 const app = express();
-import path from "path";
+const path = require("path");
 
 app.set("PORT", process.env.PORT || 5000)
 
