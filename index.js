@@ -16,5 +16,9 @@ app.get("/css/main.css", (req, res) => {
     res.sendFile(path.join(__dirname, "app/css/main.css"));
 })
 
+app.get("/favicon.ico", (req,res) => {
+    res.sendFile(path.join(__dirname, "app/favicon.ico"))
+})
+
 app.listen(app.get("PORT"));
 console.log("Server is listening at port:" + app.get("PORT"));
