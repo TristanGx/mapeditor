@@ -1,18 +1,48 @@
-h1 {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 85px;
-}
-
 body {
-    background-color: black;
+    box-sizing: content-box;
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
-div {
-    text-align: center;
+#editor {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: #444 0 0 50px 10px;
 }
 
-img {
-    width: 400px;
+.middle>* {
+    vertical-align: middle;
+}
+
+.side-container {
+    position: fixed;
+    border-radius: 5px;
+    padding: 3px;
+    top:100px;
+    background-color: rgb(211, 211, 211);
+    background: grey;
+    box-shadow: #444 0 0 20px 5px;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.side-container>*>* {
+    background: #fff;
+}
+
+.con {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 2;
+    margin-bottom: -1px;
 }
