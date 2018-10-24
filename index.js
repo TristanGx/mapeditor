@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const favicon = require("server-favicon");
 
-app.set("PORT", process.env.PORT || 5000)
-
+app.set("PORT", process.env.PORT || 5000);
+app.use(favicon(__dirname + "/app/favicon.ico"));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "app/index.html"));
 });
@@ -16,9 +17,6 @@ app.get("/css/main.css", (req, res) => {
     res.sendFile(path.join(__dirname, "app/css/main.css"));
 })
 
-app.get("/favicon.ico", (req,res) => {
-    res.sendFile(path.join(__dirname, "app/favicon.ico"))
-})
 
 app.listen(app.get("PORT"));
 console.log("Server is listening at port:" + app.get("PORT"));
